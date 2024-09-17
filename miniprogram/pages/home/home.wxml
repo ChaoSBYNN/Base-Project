@@ -1,0 +1,65 @@
+<!-- pages/home/home.wxml -->
+<view class="container">
+<!-- 修改后的轮播图部分 -->
+<swiper
+  class="swiper-container"
+  autoplay="true"
+  interval="3000"
+  duration="500"
+  indicator-dots="true"
+  indicator-color="#cccccc"
+  indicator-active-color="#ffffff"
+>
+  <block wx:for="{{images}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" mode="aspectFill" class="slide-image"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+  <!-- 按钮部分 -->
+  <!-- 图标+文字的按钮部分 -->
+  <view class="button-container">
+    <view class="icon-button" bindtap="navigateToVote">
+      <image class="icon" src="/images/bookmark.png"></image>
+      <text class="icon-text">作品</text>
+    </view>
+    <view class="icon-button" bindtap="navigateToOrders">
+      <image class="icon" src="/images/share.png"></image>
+      <text class="icon-text">领红包</text>
+    </view>
+  </view>
+
+  <!-- 邀请部分 -->
+  <view class="share-container">
+    <image src="/images/share_banner.png" mode="aspectFill" class="share-image"></image>
+  </view>
+
+  <!-- 商品列表部分 -->
+  <view class="product-list">
+    <block wx:for="{{products}}" wx:key="id">
+      <view class="product-item" id="{{item.title}}">
+        <image class="product-image" src="{{item.image}}" mode="aspectFill" />
+        <!-- 商品信息：名称和价格 -->
+        <view class="product-info">
+          <view class="product-details">
+            <text class="product-name">{{item.name}}</text>
+            <text class="product-space"> | </text>
+            <text class="product-title">{{item.title}}</text>
+          </view>
+          <view class="product-details">
+            <text class="product-evaluate">{{item.evaluate}}</text>
+          </view>
+          <view class="product-details">
+            <text class="product-count">服务: {{item.count}} </text>
+            <text class="product-rating">好评: {{item.rating}}% </text>
+          </view>
+        </view>
+        <!-- 添加图标 (图片形式) -->
+        <view class="add-icon-container">
+          <image class="add-icon" src="/images/add.png" bindtap="addToCart" data-id="{{item.id}}" />
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

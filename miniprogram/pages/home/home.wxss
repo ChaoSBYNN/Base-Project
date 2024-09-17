@@ -1,0 +1,132 @@
+/* pages/home/home.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+/* 添加容器和图片的宽高 */
+.swiper-container {
+  width: 100vw;
+  height: 300rpx; /* 可以根据需要调整高度 */
+}
+
+.share-container {
+  width: 100vw;
+  height: 170rpx; /* 可以根据需要调整高度 */
+}
+.share-image {
+  width: calc(100vw - 40rpx); /* 图片宽度减去左右各20rpx的边距 */
+  margin: 20rpx 20rpx; /* 确保左右各有20rpx的边距 */
+  height: 150rpx;
+}
+.swiper-item {
+  padding: 0 0rpx; /* 为swiper-item添加左右边距 */
+}
+.slide-image {
+  width: calc(100vw - 40rpx); /* 图片宽度减去左右各20rpx的边距 */
+  height: 300rpx;
+  margin: 0 20rpx; /* 确保左右各有20rpx的边距 */
+  object-fit: cover; /* 确保图片按比例填充 */
+}
+
+
+/* 按钮容器样式 */
+.button-container {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* 图标按钮样式 */
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 5rpx;
+}
+
+.icon-text {
+  font-size: 24rpx;
+  color: #333;
+}
+
+/* 商品列表样式 */
+.product-list {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row; /* 水平排列图片和商品信息 */
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #e0e0e0; /* 添加底部分隔线 */
+}
+
+.product-image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 8rpx; /* 可选：图片圆角 */
+  margin-right: 20rpx; /* 图片和商品信息之间的间距 */
+}
+
+.product-item text {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+
+/* 商品信息部分 */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 商品名称 */
+.product-name {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+/* 商品价格 */
+.product-price {
+  font-size: 28rpx;
+  color: #ff5722;
+}
+
+/* 添加按钮样式 */
+.add-button {
+  background-color: #ff5722; /* 按钮背景颜色 */
+  color: #fff; /* 按钮文字颜色 */
+  border: none; /* 去掉按钮边框 */
+  padding: 10rpx 20rpx; /* 按钮内边距 */
+  border-radius: 5rpx; /* 按钮圆角 */
+  font-size: 28rpx; /* 按钮文字大小 */
+  cursor: pointer; /* 鼠标悬停时显示为手型 */
+}
+
+/* 添加图标容器样式 */
+.add-icon-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 120rpx; /* 图标和商品信息之间的间距 */
+}
+
+/* 添加图标图片样式 */
+.add-icon {
+  width: 42rpx;
+  height: 42rpx;
+  cursor: pointer; /* 鼠标悬停时显示为手型 */
+}

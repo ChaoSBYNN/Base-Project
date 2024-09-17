@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container" style="height: 1372rpx; display: flex; box-sizing: border-box">
+    <view>
+      <image style="position: relative; left: 8rpx; top: -895rpx; height: 297rpx; display: block; box-sizing: border-box" src="https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-17a.png?imageMogr2/thumbnail/585x585/quality/70/strip/format/webp" />
+    </view>
+    
+    <image style="position: relative; left: 8rpx; top: -931rpx; height: 268rpx; display: block; box-sizing: border-box" src="https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-17a.png?imageMogr2/thumbnail/585x585/quality/70/strip/format/webp" />
+  
+    <image style="position: relative; left: 8rpx; top: -704rpx; height: 193rpx; display: block; box-sizing: border-box; width: 212rpx" src="https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-17a.png?imageMogr2/thumbnail/585x585/quality/70/strip/format/webp" />
+  </view>
+</scroll-view>
